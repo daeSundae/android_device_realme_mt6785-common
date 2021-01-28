@@ -122,10 +122,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
-# Symbols
-PRODUCT_PACKAGES += \
-    libshim_showlogo
-
 # Vendor Services - DISABLED
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/placeholder:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/init/vendor.oppo.hardware.biometrics.face@1.0-service.rc
