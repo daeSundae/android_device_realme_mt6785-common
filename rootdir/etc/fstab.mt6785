@@ -8,9 +8,6 @@ system                                           /system               ext4    r
 vendor                                           /vendor               ext4    ro                                                  wait,avb,logical,first_stage_mount
 product                                          /product              ext4    ro                                                  wait,avb,logical,first_stage_mount
 odm                                              /odm                  ext4    ro                                                  wait,avb,logical,first_stage_mount
-oppo_product                                     /oppo_product         ext4    ro                                                  wait,logical,first_stage_mount,nofail
-oppo_engineering                                 /oppo_engineering     ext4    ro                                                  wait,logical,first_stage_mount,nofail
-common_preload                                   /common_preload       ext4    ro                                                  wait,logical,first_stage_mount,nofail
 
 # Core Partitions
 /dev/block/platform/bootdevice/by-name/md_udc    /metadata             ext4    noatime,nosuid,nodev,discard                        wait,formattable,first_stage_mount
