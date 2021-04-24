@@ -56,6 +56,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_EXTRA_VNDK_VERSIONS)/etc/audio_policy_configuration.xml
 
+# Camera
+PRODUCT_PACKAGES += \
+    GoogleCameraGo
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
