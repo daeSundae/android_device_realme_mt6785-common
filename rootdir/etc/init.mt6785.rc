@@ -9,6 +9,12 @@ on fs
     mount_all /vendor/etc/fstab.mt6785 --early
     mount_all /vendor/etc/fstab.mt6785 --late
 
+on boot
+    # DT2W
+    write /proc/touchpanel/double_tap_enable 1
+    # OTG    
+    write /sys/class/power_supply/usb/otg_switch 1
+
 on post-fs
     # Unmount the overridden fstab because the SELinux label is incorrect
     # and some MTK daemons can crash because of that
